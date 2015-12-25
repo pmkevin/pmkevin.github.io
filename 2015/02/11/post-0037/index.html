@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>支付宝红包的逻辑与成败 | hp256</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="2015年2月11日, 支付宝开始向全国人民派红包，一时间好不热闹。
+
+有抢红包不亦乐乎的，有晒红包晒到手软的，也有忙活了半天什么红包也没抢着，赌咒发誓说以后再也不相信爱情的。
+在我看来，凭借庞大的用户基数吸引到的眼球以及参与度，支付宝红包已经成功了一半，但是另一半则存疑，否则，也不会有知乎用户产生这样的疑惑
+
+支付宝新春红包是骗局吗？认识的人没有一个抢到的
+
+支付宝红包应该怎么做，才能看起来不像">
+<meta property="og:type" content="article">
+<meta property="og:title" content="支付宝红包的逻辑与成败">
+<meta property="og:url" content="http://hp256.com/2015/02/11/post-0037/index.html">
+<meta property="og:site_name" content="hp256">
+<meta property="og:description" content="2015年2月11日, 支付宝开始向全国人民派红包，一时间好不热闹。
+
+有抢红包不亦乐乎的，有晒红包晒到手软的，也有忙活了半天什么红包也没抢着，赌咒发誓说以后再也不相信爱情的。
+在我看来，凭借庞大的用户基数吸引到的眼球以及参与度，支付宝红包已经成功了一半，但是另一半则存疑，否则，也不会有知乎用户产生这样的疑惑
+
+支付宝新春红包是骗局吗？认识的人没有一个抢到的
+
+支付宝红包应该怎么做，才能看起来不像">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0037/hp256.com-alipay-bonus.png">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0037/diffusion-of-Innovation.png">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0037/hp256.com-alipay-bonus-2.png">
+<meta property="og:updated_time" content="2015-02-11T14:16:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="支付宝红包的逻辑与成败">
+<meta name="twitter:description" content="2015年2月11日, 支付宝开始向全国人民派红包，一时间好不热闹。
+
+有抢红包不亦乐乎的，有晒红包晒到手软的，也有忙活了半天什么红包也没抢着，赌咒发誓说以后再也不相信爱情的。
+在我看来，凭借庞大的用户基数吸引到的眼球以及参与度，支付宝红包已经成功了一半，但是另一半则存疑，否则，也不会有知乎用户产生这样的疑惑
+
+支付宝新春红包是骗局吗？认识的人没有一个抢到的
+
+支付宝红包应该怎么做，才能看起来不像">
+  
+    <link rel="alternative" href="/atom.xml" title="hp256" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58050161-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">hp256</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">日拱一卒，不期速成</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">存档</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="hp256.com">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-post-0037" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/11/post-0037/" class="article-date">
+  <time datetime="2015-02-11T02:46:06.000Z" itemprop="datePublished">2015-02-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/产品/">产品</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      支付宝红包的逻辑与成败
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2015年2月11日, 支付宝开始向全国人民派红包，一时间好不热闹。</p>
+<p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0037/hp256.com-alipay-bonus.png" alt=""></p>
+<p>有抢红包不亦乐乎的，有晒红包晒到手软的，也有忙活了半天什么红包也没抢着，赌咒发誓说以后再也不相信爱情的。</p>
+<p><strong>在我看来，凭借庞大的用户基数吸引到的眼球以及参与度，支付宝红包已经成功了一半，但是另一半则存疑，否则，也不会有知乎用户产生这样的疑惑</strong></p>
+<blockquote>
+<p><a href="http://www.zhihu.com/question/28119001/" target="_blank" rel="external">支付宝新春红包是骗局吗？认识的人没有一个抢到的</a></p>
+</blockquote>
+<p><strong>支付宝红包应该怎么做，才能看起来不像一个骗局呢？</strong></p>
+<a id="more"></a>
+<p>这就要从运营和推广活动的本质说起了。</p>
+<p>简而言之，好的运营，实现的目的是「花最少的钱, 办最多的事」。从这个角度看，支付宝红包是非常成功的案例，用3亿元不到的成本，轰炸了朋友圈，刷爆了眼球，制造了良好的传播效果。在「移动支付」这片兵家必争之地，实现了「吸引新用户」和「增加老用户粘性」两个目的。</p>
+<p><strong>那它的局限性在哪？</strong></p>
+<p>其实这是所有运营都要面临的问题，就是「有限的预算」。支付宝用户数量在2012年12月已经达到了8亿（数据来源：<a href="http://zh.wikipedia.org/zh/%E6%94%AF%E4%BB%98%E5%AE%9D" target="_blank" rel="external">wikipedia</a>），即使这其中只有10%的用户参与抢红包活动，以2月11日当天共3000万的红包总数来看，每人平均只能分到「4毛钱红包」。如果真按每个用户平分4毛钱，估计有些心急的小伙伴连摔手机的心思都有。</p>
+<p><strong>问题来了：</strong><br><strong>当「有限的预算」遭遇「庞大的用户基数」，该如何实现「良好的传播效果」？</strong></p>
+<p>说说我的思路：</p>
+<ol>
+<li>3亿的预算分成两部分</li>
+<li>一部分用来产生「高额红包」，数额从2位数到4位数不等，通过算法，派发给「高影响力用户」。</li>
+<li>另一部分用来产生「小额红包」，数量从几毛到几块不等，随机派发给「普通影响力用户」。</li>
+</ol>
+<p>高影响力用户，是系统通过算法识别出的，在社交网络上的内容产出者和意见领袖，也是「引爆点」这本书里提到的「Innovators」和「Early Adopters」，见下图。这部分用户得到高额红包后，如果分享到社交网络，会产生比普通影响力用户大得多的传播学效果。也是运营方需要重点对待的用户群体。</p>
+<p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0037/diffusion-of-Innovation.png" alt=""></p>
+<p>图片来源：<a href="http://en.wikipedia.org/wiki/Early_adopter" target="_blank" rel="external">Wikipedia</a></p>
+<p>普通影响力用户，则随机派发小额红包。</p>
+<p>每一分钱都花在刀刃上，要的就是这个效果。</p>
+<p><strong>分析到这，另一个有意思的话题浮出水面了，如何识别出「高影响力用户」？</strong></p>
+<p>在这一块腾讯具有天然优势，因为微信的价值正是背后的「中国社交关系图谱」，通过判断好友数量，原创信息数量，信息被转发数量这三个指标，可以轻松识别出「高影响力用户」。</p>
+<p>而阿里在这一块却是天然欠缺的。支付宝的价值是背后的「中国交易关系图谱」，但要凭借这张图谱，来识别高影响力用户，难度较大。我能想到的方式，可能更多是通过用户交易行为，判断出「高净值用户」，同时假定「高净值用户」和「高影响力用户」具有较高的重合度，间接识别出「高影响力用户」。</p>
+<p>阿里早就意识到了短板，甚至在这次支付宝红包的活动中，也试图补齐短板。</p>
+<p><strong>想到了什么？</strong><br><strong>对，正是「接龙红包」，下图最后一张的「红包流向」，揭示了阿里的用心。</strong></p>
+<p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0037/hp256.com-alipay-bonus-2.png" alt=""></p>
+<p>社交关系图谱，正是阿里所欠缺的，也是腾讯最不想让阿里所拥有的。但是，微信可以禁止支付宝的直接分享，却不能禁止用户分享图片。「接龙红包」，利用微信的渠道，通过图片分享和输入口令的方式，绕开微信的封杀，间接复制了微信的核心财富「社交关系图谱」。</p>
+<p><strong>一句话，「接龙红包」是阿里赤裸裸在挖腾讯墙角。</strong></p>
+<p><strong>插一句，阿里和腾讯在各个领域火拼，其实本质上就是「交易」和「社交」两个人类基本行为之间的博弈。在这个过程中，BAT三家之一的百度，渐渐被淡忘了。百度如果不进击的话，三足鼎立，可能会被两强相争取代。这个速度，可能很快。</strong></p>
+<p>对于那些抢到几毛或者几块红包的小伙伴们，我的建议是，努力成为「高影响力用户」，这样，下一个大红包离你就不远了。更有可能的是，那时，你已经完全不在乎这些红包了。</p>
+<p>延伸阅读：<a href="http://hp256.com/2014/12/29/post-0003/">白送2000块拿不拿?</a></p>
+<hr>
+<p>转载请附上原文链接：<a href="http://hp256.com/2015/02/11/post-0037/">http://hp256.com/2015/02/11/post-0037/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://hp256.com/2015/02/11/post-0037/" data-id="ciilcxs4c0014fjrreab22ma8" class="article-share-link" data-share="baidu">分享到</a>
+      
+
+      
+        <a href="http://hp256.com/2015/02/11/post-0037/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/02/11/post-0038/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          我到过的国家公园们「5」- Crater Lake「火山湖公园」
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/02/10/post-0036/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">Tiger Team 养成之路(15) - iOS开发之继续阅读</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/02/11/post-0037/" data-title="支付宝红包的逻辑与成败" data-url="http://hp256.com/2015/02/11/post-0037/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/感想/">感想</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/电影/">电影</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书/">读书</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/走遍/">走遍</a><span class="category-list-count">16</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">19</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/01/">一月 2010</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/04/">四月 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/03/">三月 2009</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/09/">九月 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/09/">九月 2007</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/03/08/post-0054/">我到过的国家公园们「10」- Hawaii Valcanoes「夏威夷火山公园」</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/01/post-0053/">第一次跳伞是从4600米一个人跳下</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/26/post-0052/">Tiger Team 养成之路(20) - iOS开发之找到了开源项目</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/25/post-0051/">Tiger Team 养成之路(19) - iOS开发之交给了苹果保护费</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/24/post-0049/">由「大黑大悟」的采访所想到的</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">友情链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://www.zhihu.com" target="_blank">知乎 - 看更大的世界</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 Kevin Yang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">存档</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"pmkevin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>window._bd_share_config={"common":{},"share":{"bdCustomStyle":"/css/bdshare.css"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+</div>
+</body>
+</html>

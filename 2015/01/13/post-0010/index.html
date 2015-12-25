@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>产品工作也可用的到的Linux Shell命令们 | hp256</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="至今依然有一些Linux Shell下的命令是好用得无与伦比的, 比如wget,比如tar, 在产品工作中也可以有非常大的帮助.
+例如当我看到设计很不错的个人网站, 想再细一点分析时, wget命令加r参数就是再好不过的工具.
+非著名UX Designer Erik D. Kennedy在Medium上说过, 
+
+做好UI/UE或者是前端工作的要诀之一就是
+Steal Like an Artist">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品工作也可用的到的Linux Shell命令们">
+<meta property="og:url" content="http://hp256.com/2015/01/13/post-0010/index.html">
+<meta property="og:site_name" content="hp256">
+<meta property="og:description" content="至今依然有一些Linux Shell下的命令是好用得无与伦比的, 比如wget,比如tar, 在产品工作中也可以有非常大的帮助.
+例如当我看到设计很不错的个人网站, 想再细一点分析时, wget命令加r参数就是再好不过的工具.
+非著名UX Designer Erik D. Kennedy在Medium上说过, 
+
+做好UI/UE或者是前端工作的要诀之一就是
+Steal Like an Artist">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0010/The-Matrix.png">
+<meta property="og:updated_time" content="2015-02-10T07:36:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="产品工作也可用的到的Linux Shell命令们">
+<meta name="twitter:description" content="至今依然有一些Linux Shell下的命令是好用得无与伦比的, 比如wget,比如tar, 在产品工作中也可以有非常大的帮助.
+例如当我看到设计很不错的个人网站, 想再细一点分析时, wget命令加r参数就是再好不过的工具.
+非著名UX Designer Erik D. Kennedy在Medium上说过, 
+
+做好UI/UE或者是前端工作的要诀之一就是
+Steal Like an Artist">
+  
+    <link rel="alternative" href="/atom.xml" title="hp256" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58050161-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">hp256</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">日拱一卒，不期速成</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">存档</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="hp256.com">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-post-0010" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/01/13/post-0010/" class="article-date">
+  <time datetime="2015-01-13T06:32:45.000Z" itemprop="datePublished">2015-01-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      产品工作也可用的到的Linux Shell命令们
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>至今依然有一些Linux Shell下的命令是好用得无与伦比的, 比如<strong>wget</strong>,比如<strong>tar</strong>, 在产品工作中也可以有非常大的帮助.</p>
+<p>例如当我看到设计很不错的个人网站, 想再细一点分析时, <strong>wget</strong>命令加<strong>r</strong>参数就是再好不过的工具.</p>
+<p>非著名UX Designer <strong>Erik D. Kennedy</strong>在<a href="https://medium.com" target="_blank" rel="external">Medium</a>上说过, </p>
+<blockquote>
+<p>做好<strong>UI/UE</strong>或者是<strong>前端</strong>工作的要诀之一就是</p>
+<p><strong>Steal Like an Artist</strong></p>
+</blockquote>
+<p>中文原文在<a href="http://www.36kr.com/p/217265.com" target="_blank" rel="external">36氪</a>, 英文原文在这里, <a href="https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda" target="_blank" rel="external">7 Rules for Creating Gorgeous UI</a></p>
+<p>#####那么这些Linux Shell下的工具可能就是Steal Master手上的利器之一了.</p>
+<p>想到我目前只会它们其中的一小部分. 抱着一次投资, 终身受益的心态, 抽出了一点时间，整理了一个我日常有可能会用到的的Linux Shell命令集合, 放在这里, 以后要找起来就方便多了. </p>
+<p>同时附上了一些需要深入使用时能够参考的文档, 以链接形式放在了一些命令的后边, 参数什么的查起来就更方便了.</p>
+<p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0010/The-Matrix.png" alt=""></p>
+<p>正文如下:</p>
+<a id="more"></a>
+<p>###一、文件命令</p>
+<blockquote>
+<p>1、mkdir</p>
+</blockquote>
+<p>创建新文件</p>
+<blockquote>
+<p>2、ls</p>
+</blockquote>
+<p>相当于windows下的dir</p>
+<blockquote>
+<p>3、grep</p>
+</blockquote>
+<p>搜索文件内容, 可加正则表达式<br>1、grep -l ‘boss’ <em>   显示所有包含boss的文件名。<br>2、grep -n ‘boss’ file在匹配行之前加行号。<br>3、grep -i ‘boss’ file显示匹配行，boss不区分大小写。<br>4、grep -v ‘boss’ file显示所有不匹配行。<br>5、grep -q ‘boss’ file找到匹配行，但不显示，但可以检查grep的退出状态。（0为匹配成功）<br>6、grep -c ‘boss’ file只显示匹配行数（包括0）。<br>7、grep   “$boss” file扩展变量boss的值再执行命令。<br>8、ps -ef|grep “^</em>user1” 搜索user1的命令，即使它前面有零个或多个空格。<br>9、ps -e|grep -E ‘grant_server|commsvr|tcpsvr|dainfo’ 查找多个字符串的匹配（grep -E相当于egrep）</p>
+<blockquote>
+<p>4、 sed</p>
+</blockquote>
+<p>可删除(delete)、改变(change)、添加(append)、插入(insert)、合、交换文件中的资料行,或读入其它档的资料到文&gt;件中,也可替换(substuite)它们其中的字串、或转换(tranfer)其中的字母等等。例如将文件中的连续空白行删成一行、”local”字串替换成”remote”、”t”字母转换成”T”、将第10行资料与第11资料合等.<br><a href="http://blog.csdn.net/zg_hover/article/details/1804481" target="_blank" rel="external">详细用法见此处</a></p>
+<blockquote>
+<p>5、find</p>
+</blockquote>
+<p>查找文件命令<br>1、根据文件名查找<br>例如，我们想要查找一个文件名是lilo.conf的文件，可以使用如下命令：<br>find / －name lilo.conf<br>find命令后的“/”表示搜索整个硬盘。<br>2、快速查找文件<br>根据文件名查找文件会遇到一个实际问题，就是要花费相当长的一段时间，特别是大型Linux文件系统和大容量硬盘文件放在很深的子目录中时。如果我们知道了这个文件存放在某个目录中，那么只要在这个目录中往下寻找就能节省很多时间。比如smb.conf文件，从它的文件后缀“.conf”可以判断这是一个配置文件，那么它应该在/etc目录内，此时可以使用下面命令：<br>find /etc －name smb.conf<br>这样，使用“快速查找文件”方式可以缩短时间。<br>3、根据部分文件名查找方法<br>有时我们知道只某个文件包含有abvd这4个字，那么要查找系统中所有包含有这4个字符的文件可以输入下面命令：find / －name ‘<em>abvd</em>‘<br>输入这个命令以后，Linux系统会将在/目录中查找所有的包含有abvd这4个字符的文件（其中*是通配符），比如abvdrmyz等符合条件的文件都能显示出来。<br>4、使用混合查找方式查找文件<br>find命令可以使用混合查找的方法，例如，我们想在/etc目录中查找大于500000字节，并且在24小时内修改的某个文件，则可以使用-and (与)把两个查找参数链接起来组合成一个混合的查找方式。<br>find /etc -size +500000c -and -mtime +1</p>
+<blockquote>
+<p>6、mv</p>
+</blockquote>
+<p>移动文件或重命名<br>1、将/usr/cbu中的所有文件移到当前目录（用“.”表示）中：<br>$ mv /usr/cbu/ * .<br>2、将文件cjh.txt重命名为wjz.txt：<br>$ mv cjh.txt wjz.txt　</p>
+<blockquote>
+<p>7、diff (还有cmp指令)</p>
+</blockquote>
+<p>用于两个文件之间的比较，并指出两者的不同。<br>格式<br>diff [options] 源文件 目标文件<br>[options]主要参数<br>-a：将所有文件当作文本文件来处理。<br>-b：忽略空格造成的不同。<br>-B：忽略空行造成的不同。<br>-c：使用纲要输出格式。<br>-H：利用试探法加速对大文件的搜索。<br>-I：忽略大小写的变化。<br>-n –rcs：输出RCS格式。</p>
+<blockquote>
+<p>8、cat</p>
+</blockquote>
+<p>查看文件, 合并文件, 给文件里的行加上编号<br>1、格式<br>cat [options] 文件1 文件2……<br>2、[options]主要参数<br>－n：由第一行开始对所有输出的行数编号。<br>－b：和－n相似，只不过对于空白行不编号。<br>－s：当遇到有连续两行以上的空白行时，就代换为一行的空白行。</p>
+<blockquote>
+<p>9、ln</p>
+</blockquote>
+<p>链接两个目录或两个文件, 相当于创建windows的快捷方式</p>
+<blockquote>
+<p>10、df</p>
+</blockquote>
+<p>显示文件占用空间的多少</p>
+<p>###二、网络命令</p>
+<blockquote>
+<p>11、wget</p>
+</blockquote>
+<p>下载网站的工具<br><a href="http://my.oschina.net/renyuansoft/blog/9414" target="_blank" rel="external">详细用法见此处</a></p>
+<blockquote>
+<p>12、ssh</p>
+</blockquote>
+<p>创建远程连接的工具, 客户端可用Putty<br><a href="http://ted.is-programmer.com/posts/4445.html" target="_blank" rel="external">详细用法见此处1</a><br><a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html" target="_blank" rel="external">详细用法见此处2</a></p>
+<blockquote>
+<p>13、netstat</p>
+</blockquote>
+<p>显示网络连接和端口的使用情况</p>
+<blockquote>
+<p>14、telnet</p>
+</blockquote>
+<p>远程登录主机的命令</p>
+<blockquote>
+<p>15、rcp</p>
+</blockquote>
+<p>代表远程文件拷贝，用于计算机之间文件拷贝。</p>
+<blockquote>
+<p>16、nslookup</p>
+</blockquote>
+<p>查看用的DNS服务器, 还可以反向查询,<br>如nslookup -type=a 163.com<br>可以查看网站用的域名是由谁提供的.<br>如nslookup -type=mx hp256.com<br>可查询我的博客用的mx服务是哪家的<br>还有nslookup -type=CNAME hp256.com等等其他用法.</p>
+<p>如果对DNS有更近一步的兴趣, 可以看<a href="http://jeffyyko.blog.51cto.com/28563/259092/" target="_blank" rel="external">这里</a>和<a href="http://jeffyyko.blog.51cto.com/28563/226194" target="_blank" rel="external">这里</a></p>
+<blockquote>
+<p>17、dig命令</p>
+</blockquote>
+<p>可以看域名解析的全过程<br><a href="http://roclinux.cn/?p=2449" target="_blank" rel="external">详细用法见此处</a></p>
+<blockquote>
+<p>18、openssl</p>
+</blockquote>
+<p><a href="http://jackyan.blog.51cto.com/2589874/1282047" target="_blank" rel="external">详细用法见此处</a></p>
+<p>###三、系统命令</p>
+<blockquote>
+<p>19、su和sudo</p>
+</blockquote>
+<p>用来切换用户身份的工具, sudo是切换成管理员身份, git上并没有这个命令<br><a href="http://www.jb51.net/LINUXjishu/12713.html" target="_blank" rel="external">详细用法见此处</a></p>
+<blockquote>
+<p>20、chmod</p>
+</blockquote>
+<p>chmod命令是非常重要的，用于改变文件或目录的访问权限，用户可以用它控制文件或目录的访问权限，使用权限是超级用户。<br>◆操作符号<br>+：添加某个权限。<br>-：取消某个权限。<br>=：赋予给定权限，并取消其它所有权限（如果有的话）。</p>
+<p>◆设置mode的权限可用下述字母的任意组合<br>r：可读。<br>w：可写。<br>x：可执行。<br>X：只有目标文件对某些用户是可执行的或该目标文件是目录时才追加x属性。<br>s：文件执行时把进程的属主或组ID置为该文件的文件属主。方式“u＋s”设置文件的用户ID位，“g＋s”设置组ID位。<br>t：保存程序的文本到交换设备上。<br>u：与文件属主拥有一样的权限。<br>g：与和文件属主同组的用户拥有一样的权限。<br>o：与其它用户拥有一样的权限。</p>
+<blockquote>
+<p>21、ps</p>
+</blockquote>
+<p>显示瞬间进程 (process) 的动态，使用权限是所有使用者。</p>
+<blockquote>
+<p>22、fatattr</p>
+</blockquote>
+<p>改变fat档案属性</p>
+<p>###四、工具命令</p>
+<blockquote>
+<p>23、eval</p>
+</blockquote>
+<p>可以在一条命令行运行多个命令的工具<br><a href="http://363918.blog.51cto.com/353918/1341977" target="_blank" rel="external">详细用法见此处1</a><br><a href="http://www.linuxso.com/command/eval.html" target="_blank" rel="external">详细用法见此处2</a></p>
+<blockquote>
+<p>24、tar (gzip, gunzip, unzip)</p>
+</blockquote>
+<p>既可以压缩, 又可以解压缩<br><a href="http://blog.csdn.net/bobshute/article/details/4044728" target="_blank" rel="external">详细用法见此处</a></p>
+<blockquote>
+<p>25、man</p>
+</blockquote>
+<p>提供帮助文档的命令</p>
+<blockquote>
+<p>26、echo</p>
+</blockquote>
+<p>echo命令的功能是在显示器上显示一段文字，一般起到一个提示的作用。<br>该命令的一般格式为： echo [ -n ] 字符串<br>其中选项n表示输出文字后不换行；字符串可以加引号，也可以不加引号。用echo命令输出加引号的字符串时，将字符串原样输出；用echo命令输出不加引号的字符串时，将字符串中的各个单词作为字符串输出，各字符串之间用一个空格分割。  </p>
+<blockquote>
+<p>27、make</p>
+</blockquote>
+<p>做大型软件时需要用到的工具<br><a href="http://www.yesky.com/307/1826307.shtml" target="_blank" rel="external">详细用法见此处</a></p>
+<p>希望得到您的宝贵意见, 联系我请点这里<a href="mailto:hi@hp256.com">hi@hp256.com</a><br>如需转载, 请附上原文出处 <a href="http://hp256.com/2015/01/13/post-0010/">hp256.com</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://hp256.com/2015/01/13/post-0010/" data-id="ciilcxs65002nfjrrivr0tc78" class="article-share-link" data-share="baidu">分享到</a>
+      
+
+      
+        <a href="http://hp256.com/2015/01/13/post-0010/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/01/14/post-0011/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          Axure RP 7中的Dynamic Panel使用心得
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/01/13/post-0004/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">竞品分析-滴滴打车和快的打车的iOS端UI界面对比</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/01/13/post-0010/" data-title="产品工作也可用的到的Linux Shell命令们" data-url="http://hp256.com/2015/01/13/post-0010/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/感想/">感想</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/电影/">电影</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书/">读书</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/走遍/">走遍</a><span class="category-list-count">16</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">19</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/01/">一月 2010</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/04/">四月 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/03/">三月 2009</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/09/">九月 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/09/">九月 2007</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/03/08/post-0054/">我到过的国家公园们「10」- Hawaii Valcanoes「夏威夷火山公园」</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/01/post-0053/">第一次跳伞是从4600米一个人跳下</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/26/post-0052/">Tiger Team 养成之路(20) - iOS开发之找到了开源项目</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/25/post-0051/">Tiger Team 养成之路(19) - iOS开发之交给了苹果保护费</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/24/post-0049/">由「大黑大悟」的采访所想到的</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">友情链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://www.zhihu.com" target="_blank">知乎 - 看更大的世界</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 Kevin Yang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">存档</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"pmkevin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>window._bd_share_config={"common":{},"share":{"bdCustomStyle":"/css/bdshare.css"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>竞品分析-滴滴打车和快的打车的iOS端UI界面对比 | hp256</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="更新-2015年1月13日
+偶然间看到了对Dan Grover的采访, 有非常多有趣的内幕, 包括了Dan本人复杂的经历(这个和我很像), 从美国到中国并加入微信团队的过程, 微信内部的Tiger Team, 研发6秒小视频这个项目中的一些趣事, 非常具备可读性, 不敢独享, 原文链接在此
+原文-2015年1月3日
+
+###本文源起
+在偶然间浏览到一个美国人Dan Grover写的比较中美移动端A">
+<meta property="og:type" content="article">
+<meta property="og:title" content="竞品分析-滴滴打车和快的打车的iOS端UI界面对比">
+<meta property="og:url" content="http://hp256.com/2015/01/13/post-0004/index.html">
+<meta property="og:site_name" content="hp256">
+<meta property="og:description" content="更新-2015年1月13日
+偶然间看到了对Dan Grover的采访, 有非常多有趣的内幕, 包括了Dan本人复杂的经历(这个和我很像), 从美国到中国并加入微信团队的过程, 微信内部的Tiger Team, 研发6秒小视频这个项目中的一些趣事, 非常具备可读性, 不敢独享, 原文链接在此
+原文-2015年1月3日
+
+###本文源起
+在偶然间浏览到一个美国人Dan Grover写的比较中美移动端A">
+<meta property="og:image" content="http://dangrover.com/img/content/chineseapps/appstores@2x.png">
+<meta property="og:image" content="http://dangrover.com/img/content/chineseapps/mascots@2x.png">
+<meta property="og:image" content="http://dangrover.com/img/content/chineseapps/qrcode-scanners@2x.png">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/01_Main_UI.png">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/02_Main_Menu.png">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/03_Start-End_Points_Confirmation.png">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/04_Waiting_for_Confirmation.png">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/05_Driver_is_Coming.png">
+<meta property="og:image" content="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/06_Pay_Successful.png">
+<meta property="og:updated_time" content="2015-02-10T07:37:54.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="竞品分析-滴滴打车和快的打车的iOS端UI界面对比">
+<meta name="twitter:description" content="更新-2015年1月13日
+偶然间看到了对Dan Grover的采访, 有非常多有趣的内幕, 包括了Dan本人复杂的经历(这个和我很像), 从美国到中国并加入微信团队的过程, 微信内部的Tiger Team, 研发6秒小视频这个项目中的一些趣事, 非常具备可读性, 不敢独享, 原文链接在此
+原文-2015年1月3日
+
+###本文源起
+在偶然间浏览到一个美国人Dan Grover写的比较中美移动端A">
+  
+    <link rel="alternative" href="/atom.xml" title="hp256" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58050161-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">hp256</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">日拱一卒，不期速成</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">存档</a>
+        
+          <a class="main-nav-link" href="/about">关于</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="hp256.com">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-post-0004" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/01/13/post-0004/" class="article-date">
+  <time datetime="2015-01-13T05:05:39.000Z" itemprop="datePublished">2015-01-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/产品/">产品</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      竞品分析-滴滴打车和快的打车的iOS端UI界面对比
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>更新-2015年1月13日</strong></p>
+<p><strong>偶然间看到了对Dan Grover的采访, 有非常多有趣的内幕, 包括了Dan本人复杂的经历(这个和我很像), 从美国到中国并加入微信团队的过程, 微信内部的Tiger Team, 研发6秒小视频这个项目中的一些趣事, 非常具备可读性, 不敢独享, <a href="http://www.yixieshi.com/ucd/19876.html" target="_blank" rel="external">原文链接在此</a></strong></p>
+<p><strong>原文-2015年1月3日</strong></p>
+<hr>
+<p>###本文源起</p>
+<p>在偶然间浏览到一个美国人Dan Grover写的比较中美移动端App差异的文章, 题目非常大, 叫《中国移动应用设计趋势解读》,<a href="http://www.ui.cn/project.php?id=33849" target="_blank" rel="external">链接在此</a>. </p>
+<p>顺藤摸瓜, 找到了 <a href="http://dangrover.com/blog/2014/12/01/chinese-mobile-app-ui-trends.html" target="_blank" rel="external">原文链接</a>和原作者的博客, <a href="http://dangrover.com/" target="_blank" rel="external">链接在此</a>. 据作者自我介绍:</p>
+<blockquote>
+<p>I’m a product designer, engineer, and entrepreneur. I grew up in Vermont and have lived in Boston, New York, and San Francisco.<br>These days, you can find me in Guangzhou, China, where I work at Tencent as a product manager on WeChat.</p>
+</blockquote>
+<p>作者Dan土生土长的美国人, 原来在旧金山从事产品设计(Product Designer)的工作, 也就是相当于国内产品经理(Product Manager), 只是中美叫法不同而已. 现在在国内的腾讯做微信产品端工作. 由一个美国的产品人眼中看国内的App现状, 难怪会有一些在国内生活的产品人不同的观点, 非常值得借鉴. </p>
+<p>我在阅读Dan的文章时, 对他做的UI图非常有兴趣, 是长这个样子的:</p>
+<p><img src="http://dangrover.com/img/content/chineseapps/appstores@2x.png" alt=""></p>
+<p><img src="http://dangrover.com/img/content/chineseapps/mascots@2x.png" alt=""></p>
+<p><img src="http://dangrover.com/img/content/chineseapps/qrcode-scanners@2x.png" alt=""></p>
+<p>然后我就… 真发了一封信给他, 问他是用什么软件做的, 得到了回复如下:</p>
+<blockquote>
+<p>“The wireframes were created in Sketch. If you’re curious to see how I did it, I’d be happy to send you the source file.</p>
+<p>I can’t praise Sketch enough. I used to find Photoshop too cumbersome and pure-wireframing tools like Balsalmiq far too inflexible. Sketch is wonderful for everything from rough wireframes to pixel-perfect mockups to actually creating production artwork. “</p>
+<p>– Dan Grover</p>
+</blockquote>
+<p>Sketch这个软件我也听说过, 好像在Dribbble上发出来的原型设计里用的比较多, 不妨用用看, 于是我又回复他了:</p>
+<blockquote>
+<p>“I have been wireframing with Balsamiq for a while and have already heard about awesomeness of Sketch months ago, though not working with it yet. If that doesn’t bother you, the source file would be indeed a great help. “</p>
+<p> – Kevin</p>
+</blockquote>
+<p>然后? 然后等了两天他还没有发Sketch源文件给我. 没关系, 那我自己先试试做好了. </p>
+<p>先了解了一会, Sketch是Mac独占的, 下载了回来, 要求操作系统是Mountain Lion以上, 又去下了一个OSX, 把我的MBA升级到了要求的版本, 装好了Sketch, 用一天时间学习, 做了一个粗略的<strong>竞品分析</strong>出来, 然后写了如下的分析文章.</p>
+<h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/01_Main_UI.png" alt=""></p>
+<a id="more"></a>
+<p>主界面的差别不大.</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h3><p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/02_Main_Menu.png" alt=""></p>
+<p>两者主菜单的差别也非常微小, 有一些名字上的差别, 比如<strong>快的</strong>叫<strong>用车记录</strong>, <strong>滴滴</strong>叫<strong>我的行程</strong>; 两个App的主菜单最下面都是大Banner. 另外<strong>快的</strong>有<strong>通知中心</strong>, 里面是一些推广和送代金券的历史消息; <strong>滴滴</strong>没有, 而是换成了<strong>推荐有奖</strong>, 点进去后是一个Refer Bonus的页面. </p>
+<h3 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h3><p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/03_Start-End_Points_Confirmation.png" alt=""></p>
+<p>在用户输入了起点和终点信息后, 就到了确认行程界面. 从对比图可以看出, 两个App的上半部分非常相似, 都是<strong>起点</strong>, <strong>终点</strong>加上以地图为背景; 而下半部分的差别就比较大了, 主要体现在:</p>
+<ol>
+<li><strong>滴滴</strong>有<strong>专车</strong>选项, 而<strong>快的</strong>要到用户跳转到下一个页面才会出现专车选项.</li>
+<li><strong>滴滴</strong>有<strong>愿等</strong>和<strong>捎话</strong>功能, 无论是对用户端还是司机端来说, 都是更人性化的设置, 从某种程度上来说让资源更优配置.</li>
+</ol>
+<p>滴滴略胜一筹.</p>
+<h3 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h3><p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/04_Waiting_for_Confirmation.png" alt=""></p>
+<p>在确认行程之后, 出现的是等待应答界面. 除了已经提到的<strong>滴滴</strong>的<strong>愿等</strong>和<strong>捎话</strong>功能, 两个App在此界面的设计还是非常相似的, 就不多说了.</p>
+<h3 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h3><p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/05_Driver_is_Coming.png" alt=""></p>
+<p>如果有司机接单, 进入的就是司机来了界面. 两个App此时:</p>
+<ol>
+<li>UI的上部: 两个App都显示了车牌信息和司机的称呼, 并且提供主动联系司机的选项.</li>
+<li>UI的中部: 两个App都显示的士距离用户的距离以及大约到达的时间. 其中<strong>滴滴</strong>打车当用户已上车时, <strong>距离</strong>和<strong>时间</strong>会自动消失, 而<strong>快的</strong>则要等到用户按下下方<strong>我已上车</strong>选项之后这些信息才会消失.</li>
+<li>UI的下部: 两个App差别明显, <strong>快的</strong>有<strong>我已上车</strong>选项, 点击之后如图会出现让用户确认的弹出窗口;而<strong>滴滴</strong>没有此选项, 而是通过算法来自动判断用户是否已上车的. 在<strong>滴滴</strong>中换成了<strong>发现</strong>, <strong>支付</strong>以及<strong>完成</strong>按钮, 这三个按钮在行程开始后也会一直存在, 其中<strong>支付</strong>不用说了, <strong>完成</strong>是给司机评价, 而<strong>发现</strong>点击后会出现一些LBS服务选项, 如图所示.</li>
+</ol>
+<p>这轮的比较中<strong>滴滴</strong>是明显的胜者, 不仅通过算法自动完成了<strong>快的</strong>中需要用户点击两次才能实现的功能, 而且通过<strong>发现</strong>功能实现了很多LBS服务的入口, 既没有浪费打车软件使用者的这些流量, 又是未来盈利的可能性所在.</p>
+<h3 id="6"><a href="#6" class="headerlink" title="6."></a>6.</h3><p><img src="http://7u2evu.com1.z0.glb.clouddn.com/BlogAssets/post-0004/06_Pay_Successful.png" alt=""></p>
+<p>此界面两个App有一些差异. </p>
+<ol>
+<li><strong>快的</strong>的评价体系只有1和0, 好和坏的两个选项; <strong>滴滴</strong>则是五颗星体系.</li>
+<li><strong>快的</strong>给出了<strong>接单时间</strong>和<strong>上车时间</strong>的信息, 使用户对软件的效果有直观反映. <strong>滴滴</strong>没有. </li>
+<li><strong>滴滴</strong>提供了继续联系司机的选项, 在用户支付已经完成后, 还提供这个联系选项, 逻辑是也许乘客东西忘在了车里? </li>
+<li><strong>滴滴</strong>提供了投诉选项, 相对更人性化. </li>
+</ol>
+<p><strong>滴滴</strong>稍胜一筹, 毕竟<strong>快的</strong>展示的<strong>接单时间</strong>和<strong>上车时间</strong>有时并不能使用户很满意, 而<strong>滴滴</strong>的<strong>投诉</strong>则更加现实一些.</p>
+<h3 id="u603B_u7ED3"><a href="#u603B_u7ED3" class="headerlink" title="总结"></a>总结</h3><p>通过这篇粗浅的比较, 我们看到了截至到2015年1月1日, 两个App在长达一年多的比拼中经过数十次的迭代, 所达到的用户界面.</p>
+<p>给出一个粗略的评判, 我认为</p>
+<ol>
+<li>用户界面以及实现的功能上<strong>滴滴</strong>胜过<strong>快的</strong>. </li>
+<li>支付体验上, <strong>快的</strong>走支付宝, 体验好过于<strong>滴滴</strong>的微信支付. </li>
+<li>推广渠道上, <strong>滴滴</strong>通过微信明显好于<strong>快的</strong>.</li>
+</ol>
+<p>希望得到您的宝贵意见, 联系我请点这里<a href="mailto:hi@hp256.com">hi@hp256.com</a><br>如需转载, 请附上原文出处 <a href="http://hp256.com/2015/01/03/post-0004/">hp256.com</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://hp256.com/2015/01/13/post-0004/" data-id="ciilcxs6i002zfjrraftbk9hh" class="article-share-link" data-share="baidu">分享到</a>
+      
+
+      
+        <a href="http://hp256.com/2015/01/13/post-0004/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/01/13/post-0010/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          产品工作也可用的到的Linux Shell命令们
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/01/11/post-0009/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">我是如何制作移动端产品原型的(下)?</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/01/13/post-0004/" data-title="竞品分析-滴滴打车和快的打车的iOS端UI界面对比" data-url="http://hp256.com/2015/01/13/post-0004/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/产品/">产品</a><span class="category-list-count">36</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/感想/">感想</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/电影/">电影</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书/">读书</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/走遍/">走遍</a><span class="category-list-count">16</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">30</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">19</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">十二月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/01/">一月 2010</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/04/">四月 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/03/">三月 2009</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/09/">九月 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/09/">九月 2007</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/03/08/post-0054/">我到过的国家公园们「10」- Hawaii Valcanoes「夏威夷火山公园」</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/01/post-0053/">第一次跳伞是从4600米一个人跳下</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/26/post-0052/">Tiger Team 养成之路(20) - iOS开发之找到了开源项目</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/25/post-0051/">Tiger Team 养成之路(19) - iOS开发之交给了苹果保护费</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/24/post-0049/">由「大黑大悟」的采访所想到的</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">友情链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://www.zhihu.com" target="_blank">知乎 - 看更大的世界</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 Kevin Yang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">存档</a>
+  
+    <a href="/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"pmkevin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>window._bd_share_config={"common":{},"share":{"bdCustomStyle":"/css/bdshare.css"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+</div>
+</body>
+</html>
